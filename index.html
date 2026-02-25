@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetupKart Pro - Dein digitales Kart-Setup</title>
+    <meta name="description" content="SetupKart Pro - Die professionelle App für Kart-Setup-Management. Reifen, Chassis, Motor, Vergaser - alles an einem Ort. Für Rotax, IAME, Vortex, TM und mehr.">
+    <link rel="icon" type="image/png" href="app-icon.png">
+    <script>
+      (function() {
+        var lang = (navigator.language || navigator.userLanguage || 'de').toLowerCase().substring(0, 2);
+        var map = { en: 'en.html', fr: 'fr.html', it: 'it.html', es: 'es.html', nl: 'nl.html' };
+        if (map[lang]) window.location.replace(map[lang]);
+      })();
+    </script>
+    <link rel="stylesheet" href="style.css?v=3">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8B4YJMVKM"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-S8B4YJMVKM');</script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- NAVIGATION -->
+<!-- ═══════════════════════════════════════ -->
+<nav class="navbar">
+    <div class="container nav-content">
+        <div class="nav-brand">
+            <img src="app-icon.png" alt="SetupKart Pro" class="nav-icon">
+            <span>SetupKart Pro</span>
+        </div>
+        <div class="mobile-lang-switcher">
+            <a href="index.html" class="lang-active">DE</a><a href="en.html">EN</a><a href="fr.html">FR</a><a href="it.html">IT</a><a href="es.html">ES</a><a href="nl.html">NL</a>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#preis">Preis</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="#agb">AGB</a>
+            <a href="#datenschutz">Datenschutz</a>
+            <div class="lang-switcher">
+                <a href="index.html" class="lang-active">DE</a>
+                <a href="en.html">EN</a>
+                <a href="fr.html">FR</a>
+                <a href="it.html">IT</a>
+                <a href="es.html">ES</a>
+                <a href="nl.html">NL</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- HERO -->
+<!-- ═══════════════════════════════════════ -->
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Dein komplettes<br><span class="highlight">Kart-Setup</span><br>in einer App</h1>
+            <p class="hero-subtitle">
+                Reifen, Chassis, Motor, Vergaser, Wetter, Rundenzeiten -
+                alles digital erfasst, gespeichert und teilbar.
+                Nie wieder Zettelwirtschaft an der Rennstrecke.
+            </p>
+            <div class="hero-badges">
+                <span class="badge">Rotax</span>
+                <span class="badge">IAME</span>
+                <span class="badge">Vortex</span>
+                <span class="badge">TM</span>
+                <span class="badge">Honda</span>
+                <span class="badge">KZ</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#preis" class="btn btn-primary">Jetzt starten</a>
+                <a href="#features" class="btn btn-outline">Mehr erfahren</a>
+            </div>
+            <p class="hero-languages">Verfügbar in 6 Sprachen: DE, EN, FR, IT, ES, NL</p>
+            <p class="hero-platform">&#9888; Derzeit nur für Android verfügbar · iOS-Version in Entwicklung</p>
+        </div>
+        <div class="hero-phone">
+            <div class="phone-frame">
+                <img src="screenshots/de/chassis.jpg" alt="SetupKart Pro Hauptseite">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- FEATURES -->
+<!-- ═══════════════════════════════════════ -->
+<section id="features" class="features">
+    <div class="container">
+        <h2 class="section-title">Alles was du brauchst</h2>
+        <p class="section-subtitle">Ein komplettes Setup-Tool - entwickelt von Kartfahrern, für Kartfahrer</p>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">&#9881;</div>
+                <h3>Reifen & Chassis</h3>
+                <p>Reifendruck (kalt/warm), Spurbreite vorne &amp; hinten, Sturzeinstellung mit Laser-Visualisierung - alles auf einen Blick.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#9951;</div>
+                <h3>Motor & Vergaser</h3>
+                <p>Hauptdüse, Standgas, Luftschraube, Nadelposition, Zündkerze. Eigene Ansichten für Dell'Orto und Tilotson Vergaser.</p>
+            </div>
+            <div class="feature-card">
+                <span class="new-badge">NEU</span>
+                <div class="feature-icon">&#9729;</div>
+                <h3>Wetter & Strecke</h3>
+                <p>Wetter automatisch per GPS abrufen, Temperatur, Bedingungen. Setup pro Strecke speichern und schnell laden.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#9201;</div>
+                <h3>Rundenzeiten</h3>
+                <p>Bestzeiten erfassen, Rundenzeiten-Analyse und Laptimer CSV Import. Fortschritt über die Saison verfolgen.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128172;</div>
+                <h3>Setup teilen</h3>
+                <p>Setup als .kart-Datei exportieren und per WhatsApp, Email oder Bluetooth mit Teamkollegen teilen.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#127908;</div>
+                <h3>Spracheingabe</h3>
+                <p>Notizen per Sprache diktieren - perfekt wenn die Hände vom Schrauben schmutzig sind.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- WAS IST NEU -->
+<!-- ═══════════════════════════════════════ -->
+<section class="whats-new">
+    <div class="container">
+        <h2 class="section-title">Neu in Version 2.0</h2>
+        <p class="section-subtitle">Die neuesten Verbesserungen auf einen Blick</p>
+
+        <div class="whats-new-grid">
+            <div class="whats-new-item">
+                <div class="whats-new-icon">&#127782;</div>
+                <div>
+                    <h4>Wetter automatisch abrufen</h4>
+                    <p>Aktuelle Wetterdaten per GPS-Standort automatisch laden - Open-Meteo API, kein Account n&ouml;tig.</p>
+                </div>
+            </div>
+            <div class="whats-new-item">
+                <div class="whats-new-icon">&#128194;</div>
+                <div>
+                    <h4>Einklappbare Sektionen</h4>
+                    <p>&Uuml;bersetzung, Motor &amp; Vergaser jetzt einklappbar f&uuml;r bessere &Uuml;bersicht am Renntag.</p>
+                </div>
+            </div>
+            <div class="whats-new-item">
+                <div class="whats-new-icon">&#128100;</div>
+                <div>
+                    <h4>Fahrer &amp; Reifenhersteller</h4>
+                    <p>Fahrername und Reifenhersteller direkt im Setup erfassen.</p>
+                </div>
+            </div>
+            <div class="whats-new-item">
+                <div class="whats-new-icon">&#128172;</div>
+                <div>
+                    <h4>Feedback direkt aus der App</h4>
+                    <p>Feedback-Funktion jetzt direkt &uuml;ber das 3-Punkte-Men&uuml; erreichbar.</p>
+                </div>
+            </div>
+            <div class="whats-new-item">
+                <div class="whats-new-icon">&#9881;</div>
+                <div>
+                    <h4>Caster / Nachlauf</h4>
+                    <p>Neues Feld f&uuml;r Caster-Einstellung (Vorlauf/Nachlauf) mit freier Eingabe.</p>
+                </div>
+            </div>
+            <div class="whats-new-item">
+                <div class="whats-new-icon">&#127760;</div>
+                <div>
+                    <h4>Vollst&auml;ndig lokalisiert</h4>
+                    <p>Alle Bildschirme in 6 Sprachen - inkl. Lizenz-Screen und Feedback-Dialog.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- PRIVACY INFO -->
+<!-- ═══════════════════════════════════════ -->
+<section class="privacy-banner">
+    <div class="container">
+        <div class="privacy-content">
+            <div class="privacy-icon">&#128274;</div>
+            <div>
+                <h3>Deine Daten bleiben bei dir</h3>
+                <p>Alle Setup-Daten werden ausschliesslich lokal auf deinem Handy gespeichert. Kein Cloud-Upload, kein Account nötig. Deine Daten gehören dir - und nur dir.</p>
+                <div class="privacy-badges">
+                    <span class="privacy-badge">100% Offline nutzbar</span>
+                    <span class="privacy-badge">Keine Cloud</span>
+                    <span class="privacy-badge">Kein Account nötig</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- SCREENSHOTS -->
+<!-- ═══════════════════════════════════════ -->
+<section id="screenshots" class="screenshots-section">
+    <div class="container">
+        <h2 class="section-title">So sieht es aus</h2>
+        <p class="section-subtitle">Dunkles Design, optimiert für die Rennstrecke</p>
+
+        <div class="screenshot-gallery">
+            <div class="screenshot-item">
+                <div class="phone-frame small">
+                    <img src="screenshots/de/hero.jpg" alt="Hauptseite – Fahrer & Wetter">
+                </div>
+                <span class="screenshot-label">Hauptseite</span>
+            </div>
+            <div class="screenshot-item">
+                <div class="phone-frame small">
+                    <img src="screenshots/de/motor.jpg" alt="Motor & Vergaser">
+                </div>
+                <span class="screenshot-label">Motor & Vergaser</span>
+            </div>
+            <div class="screenshot-item">
+                <div class="phone-frame small">
+                    <img src="screenshots/de/achse.jpg" alt="Vorderachse & Übersetzung">
+                </div>
+                <span class="screenshot-label">Achse & Übersetzung</span>
+            </div>
+            <div class="screenshot-item">
+                <div class="phone-frame small">
+                    <img src="screenshots/de/tilotson.jpg" alt="IAME Tilotson Vergaser">
+                </div>
+                <span class="screenshot-label">IAME Tilotson</span>
+            </div>
+            <div class="screenshot-item">
+                <div class="phone-frame small">
+                    <img src="screenshots/de/laser.jpg" alt="Laser Sturzeinstellung">
+                </div>
+                <span class="screenshot-label">Laser-Sturz</span>
+            </div>
+            <div class="screenshot-item">
+                <div class="phone-frame small">
+                    <img src="screenshots/de/notizen.jpg" alt="Setup-Notizen & Speichern">
+                </div>
+                <span class="screenshot-label">Notizen & Speichern</span>
+            </div>
+            <div class="screenshot-item">
+                <div class="phone-frame small">
+                    <img src="screenshots/de/caster.jpg" alt="Vorderachse & Nachlauf">
+                </div>
+                <span class="screenshot-label">Vorderachse</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- MOTOREN -->
+<!-- ═══════════════════════════════════════ -->
+<section class="engines">
+    <div class="container">
+        <h2 class="section-title">Alle Motoren unterstützt</h2>
+        <div class="engine-grid">
+            <div class="engine-card">
+                <strong>Rotax</strong>
+                <span>Max / Junior / Mini / Micro</span>
+            </div>
+            <div class="engine-card">
+                <strong>IAME</strong>
+                <span>X30 / Tilotson Vergaser</span>
+            </div>
+            <div class="engine-card">
+                <strong>Vortex</strong>
+                <span>Mini / Junior / Senior</span>
+            </div>
+            <div class="engine-card">
+                <strong>TM</strong>
+                <span>KZ / OK</span>
+            </div>
+            <div class="engine-card">
+                <strong>Honda</strong>
+                <span>GX / Rental</span>
+            </div>
+            <div class="engine-card">
+                <strong>KZ</strong>
+                <span>Schalterkart</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- PREIS -->
+<!-- ═══════════════════════════════════════ -->
+<section id="preis" class="pricing">
+    <div class="container">
+        <h2 class="section-title">Einfach & fair</h2>
+
+        <div class="pricing-cards">
+            <div class="price-card">
+                <h3>Testphase</h3>
+                <div class="price">Gratis</div>
+                <p class="price-period">30 Tage</p>
+                <ul>
+                    <li>Alle Features verfügbar</li>
+                    <li>Keine Kreditkarte nötig</li>
+                    <li>Unverbindlich testen</li>
+                </ul>
+                <a href="https://github.com/appstract7-rgb/setupkart-releases/releases/download/v1.2.0/SetupKart-Pro-v1.2.0.apk" class="btn btn-outline">Jetzt testen</a>
+            </div>
+            <div class="price-card featured">
+                <div class="price-badge">Empfohlen</div>
+                <h3>Jahreslizenz</h3>
+                <div class="price">CHF 24.99</div>
+                <p class="price-period">pro Jahr</p>
+                <ul>
+                    <li>Alle Features unbegrenzt</li>
+                    <li>Alle Motoren & Kategorien</li>
+                    <li>Setup-Export & Import</li>
+                    <li>Alle Updates inklusive</li>
+                    <li>6 Sprachen</li>
+                </ul>
+                <a href="mailto:appstract7@gmail.com?subject=SetupKart%20Pro%20-%20Freischaltung&body=Hallo%2C%0A%0Aich%20m%C3%B6chte%20SetupKart%20Pro%20freischalten.%0A%0AMeine%20Ger%C3%A4te-ID%3A%20%5Bhier%20einf%C3%BCgen%5D%0A%0ABitte%20sende%20mir%20den%20Freischalt-Code%20nach%20Zahlungseingang.%0A%0AVielen%20Dank!" class="btn btn-primary">Jetzt kaufen</a>
+            </div>
+        </div>
+        <p class="hero-platform" style="text-align:center; margin-top:18px;">&#9888; Derzeit nur f&uuml;r Android verf&uuml;gbar &middot; iOS-Version in Entwicklung</p>
+
+        <div class="payment-info">
+            <h3>Zahlungsmethoden</h3>
+            <div class="payment-methods">
+                <a href="mailto:appstract7@gmail.com?subject=SetupKart%20Pro%20-%20Zahlung%20per%20Twint&body=Hallo%2C%0A%0Aich%20m%C3%B6chte%20SetupKart%20Pro%20per%20Twint%20bezahlen.%0A%0AMeine%20Ger%C3%A4te-ID%3A%20%5Bhier%20einf%C3%BCgen%5D%0A%0AVielen%20Dank!" class="payment-method">
+                    <strong>Twint</strong>
+                    <span>Details per Email</span>
+                </a>
+                <div class="payment-method">
+                    <strong>Revolut</strong>
+                    <span>Revtag: @setupkart</span>
+                </div>
+                <div class="payment-method">
+                    <strong>Bank&uuml;berweisung</strong>
+                    <span>IBAN: LT13 3250 0016 8487 8971</span>
+                    <span>BIC/SWIFT: REVOLT21</span>
+                    <span>Empf&auml;nger: Hermann Kopp</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- SO GEHTS -->
+<!-- ═══════════════════════════════════════ -->
+<section class="how-it-works">
+    <div class="container">
+        <h2 class="section-title">So einfach gehts</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>App installieren</h3>
+                <p>APK herunterladen und auf deinem Android-Gerät installieren.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>30 Tage testen</h3>
+                <p>Alle Features gratis und unverbindlich ausprobieren.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Freischalten</h3>
+                <p>Per Twint oder Überweisung bezahlen. Du bekommst deinen Code per Email.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Losfahren!</h3>
+                <p>Setup erfassen, optimieren und Bestzeiten knacken.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- KONTAKT -->
+<!-- ═══════════════════════════════════════ -->
+<section id="kontakt" class="contact">
+    <div class="container">
+        <h2 class="section-title">Kontakt</h2>
+        <p class="section-subtitle">Fragen, Feedback oder Support? Meld dich einfach!</p>
+
+        <div class="contact-info">
+            <a href="mailto:appstract7@gmail.com" class="contact-item">
+                <span class="contact-icon">&#9993;</span>
+                <span>appstract7@gmail.com</span>
+            </a>
+        </div>
+        <p class="contact-name">Hermann Kopp &middot; SetupKart</p>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- AGB -->
+<!-- ═══════════════════════════════════════ -->
+<section id="agb" class="agb">
+    <div class="container">
+        <h2 class="section-title">Allgemeine Geschäftsbedingungen (AGB)</h2>
+        <p class="agb-stand">Stand: Februar 2026</p>
+
+        <div class="agb-content">
+            <h3>1. Geltungsbereich</h3>
+            <p>Diese AGB regeln die Nutzung der mobilen Applikation «SetupKart Pro» (nachfolgend «App»), die von Hermann Kopp, Schweiz (nachfolgend «Anbieter») entwickelt und betrieben wird.</p>
+            <p>Mit dem Herunterladen, der Installation oder der Nutzung der App erklärt sich der Nutzer mit diesen AGB einverstanden. Ist der Nutzer mit den AGB nicht einverstanden, darf die App nicht genutzt werden.</p>
+
+            <h3>2. Leistungsbeschreibung</h3>
+            <p>SetupKart Pro ist eine mobile Applikation zur digitalen Erfassung, Verwaltung und Analyse von Kart-Setup-Daten. Die App umfasst insbesondere:</p>
+            <ul>
+                <li>Erfassung von Reifen-, Chassis-, Motor- und Vergasereinstellungen</li>
+                <li>Wetter- und Streckendaten</li>
+                <li>Rundenzeiten-Erfassung und -Analyse</li>
+                <li>Export und Import von Setup-Daten (.kart-Dateiformat)</li>
+                <li>Spracheingabe für Notizen</li>
+            </ul>
+            <p>Die App wird in den Sprachen Deutsch, Englisch, Französisch, Italienisch, Spanisch und Niederländisch angeboten.</p>
+
+            <h3>3. Vertragsschluss und Lizenz</h3>
+            <p><strong>3.1 Testphase:</strong> Die App kann während 30 Tagen kostenlos und unverbindlich getestet werden. Nach Ablauf der Testphase ist eine kostenpflichtige Lizenz erforderlich.</p>
+            <p><strong>3.2 Jahreslizenz:</strong> CHF 24.99 pro Jahr. Die Lizenz ist an ein einzelnes Gerät gebunden und verlängert sich nicht automatisch.</p>
+            <p><strong>3.3 Zahlungsbedingungen:</strong> Die Zahlung erfolgt per Twint, Revolut oder Banküberweisung. Der Freischaltcode wird nach Zahlungseingang per E-Mail zugestellt. Bei Bezahlung über den Google Play Store gelten die Zahlungsbedingungen von Google.</p>
+
+            <h3>4. Nutzungsrechte</h3>
+            <p>Der Anbieter gewährt dem Nutzer ein einfaches, nicht übertragbares Recht zur Nutzung der App auf einem Gerät für die Dauer der erworbenen Lizenz. Reverse Engineering, Modifikation und Weitergabe sind untersagt.</p>
+
+            <h3>5. Datenspeicherung</h3>
+            <p>Setup-Daten werden standardmässig lokal auf dem Gerät des Nutzers gespeichert. Sofern der Nutzer optionale Cloud-Funktionen aktiviert, können Daten auf externen Servern gespeichert werden. Details hierzu finden sich in der Datenschutzerklärung.</p>
+            <p>Der Nutzer ist selbst für die Sicherung seiner Daten verantwortlich. Der Anbieter übernimmt keine Haftung für Datenverlust.</p>
+
+            <h3>6. Haftungsausschluss</h3>
+            <p>Der Anbieter haftet nicht für direkte oder indirekte Schäden, die aus der Nutzung der App entstehen, insbesondere nicht für Schäden am Kart, Unfälle oder Leistungseinbussen. Die Haftung für Vorsatz und grobe Fahrlässigkeit bleibt vorbehalten.</p>
+
+            <h3>7. Gewährleistung</h3>
+            <p>Eine Garantie für ununterbrochene und fehlerfreie Funktionsfähigkeit wird nicht übernommen. Der Anbieter behält sich das Recht vor, die App jederzeit zu aktualisieren, zu ändern oder einzustellen.</p>
+
+            <h3>8. Geistiges Eigentum</h3>
+            <p>Alle Rechte an der App verbleiben beim Anbieter. Der Nutzer erwirbt ausschliesslich das in Ziffer 4 beschriebene Nutzungsrecht.</p>
+
+            <h3>9. Kündigung</h3>
+            <p>Die Lizenz endet automatisch nach Ablauf des Lizenzzeitraums. Eine vorzeitige Kündigung begründet keinen Anspruch auf Rückerstattung.</p>
+
+            <h3>10. Änderungen der AGB</h3>
+            <p>Der Anbieter behält sich vor, diese AGB jederzeit zu ändern. Die weitere Nutzung nach Änderung gilt als Zustimmung.</p>
+
+            <h3>11. Anwendbares Recht</h3>
+            <p>Es gilt ausschliesslich Schweizer Recht. Gerichtsstand ist der Wohnsitz des Anbieters in der Schweiz.</p>
+
+            <h3>12. Kontakt</h3>
+            <p>Hermann Kopp · E-Mail: appstract7@gmail.com · Web: setupkart.ch</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- DATENSCHUTZ -->
+<!-- ═══════════════════════════════════════ -->
+<section id="datenschutz" class="agb">
+    <div class="container">
+        <h2 class="section-title">Datenschutzerkl&auml;rung</h2>
+        <p class="agb-stand">Stand: Februar 2026</p>
+        <div class="agb-content">
+            <h3>1. Einleitung</h3>
+            <p>Der Schutz Ihrer pers&ouml;nlichen Daten ist uns ein wichtiges Anliegen. Diese Datenschutzerkl&auml;rung informiert Sie dar&uuml;ber, welche Daten bei der Nutzung der App &laquo;SetupKart Pro&raquo; erhoben werden und wie diese verwendet werden.</p>
+            <p>Verantwortlich f&uuml;r die Datenverarbeitung ist Hermann Kopp, Schweiz (E-Mail: appstract7@gmail.com).</p>
+
+            <h3>2. Grundsatz: Lokale Datenspeicherung</h3>
+            <p>SetupKart Pro wurde nach dem Prinzip &laquo;Privacy by Design&raquo; entwickelt. Alle von Ihnen eingegebenen Setup-Daten werden standardm&auml;ssig lokal auf Ihrem Ger&auml;t gespeichert.</p>
+            <ul>
+                <li>Keine pers&ouml;nlichen Daten auf externe Server &uuml;bertragen (ausgenommen optionale Wetter-Abfrage, siehe 3.6)</li>
+                <li>Kein Benutzerkonto ben&ouml;tigt</li>
+                <li>Keine Tracking-Tools eingesetzt</li>
+                <li>Keine Analyse- oder Werbedienste integriert</li>
+            </ul>
+            <p>Sofern der Nutzer zuk&uuml;nftige optionale Cloud-Funktionen aktiviert, k&ouml;nnen Daten auf externen Servern gespeichert werden. In diesem Fall wird der Nutzer vorab informiert und es gelten zus&auml;tzlich die Datenschutzbestimmungen des jeweiligen Cloud-Anbieters.</p>
+
+            <h3>3. Welche Daten werden verarbeitet?</h3>
+            <p><strong>3.1 Setup-Daten (lokal)</strong><br>Alle technischen Daten, die Sie in der App erfassen, werden ausschliesslich lokal auf Ihrem Ger&auml;t gespeichert und nicht an den Anbieter &uuml;bermittelt.</p>
+            <p><strong>3.2 GPS-Standort (optional)</strong><br>Die App kann optional Ihren GPS-Standort verwenden, um die Rennstrecke automatisch zu erkennen. Diese Daten werden ausschliesslich lokal verarbeitet und nicht an Dritte &uuml;bermittelt (ausgenommen die optionale Wetter-Abfrage, siehe 3.6).</p>
+            <p><strong>3.3 Spracheingabe (optional)</strong><br>Die Spracheingabefunktion nutzt die Spracherkennung Ihres Ger&auml;ts. Die Verarbeitung erfolgt gem&auml;ss den Datenschutzbestimmungen Ihres Ger&auml;teherstellers (Google/Android).</p>
+            <p><strong>3.4 Ger&auml;te-ID (bei Lizenzierung)</strong><br>F&uuml;r die Aktivierung der Jahreslizenz wird eine Ger&auml;te-ID verwendet, um den Freischaltcode an Ihr Ger&auml;t zu binden. Diese wird ausschliesslich zur Lizenzverwaltung gespeichert.</p>
+            <p><strong>3.5 Kontaktdaten (bei Kaufabwicklung)</strong><br>Ihre E-Mail-Adresse wird f&uuml;r die Zustellung des Freischaltcodes verwendet und nicht an Dritte weitergegeben.</p>
+            <p><strong>3.6 Wetterdaten (optional)</strong><br>Die App kann auf Wunsch des Nutzers aktuelle Wetterdaten &uuml;ber die Open-Meteo API abrufen. Dabei werden die GPS-Koordinaten (Breitengrad, L&auml;ngengrad) an den Dienst open-meteo.com &uuml;bermittelt. Es werden keine pers&ouml;nlichen Daten &uuml;bertragen. Open-Meteo ist ein Open-Source-Wetterdienst, der keine Registrierung erfordert. Weitere Informationen: open-meteo.com.</p>
+
+            <h3>4. Setup-Export und -Teilen</h3>
+            <p>Die Funktion zum Exportieren und Teilen von Setup-Daten (.kart-Dateien) wird vom Nutzer selbst initiiert. Der Anbieter hat keinen Einfluss darauf, an wen der Nutzer seine Daten weitergibt.</p>
+
+            <h3>5. Google Play Store</h3>
+            <p>Wenn Sie die App &uuml;ber den Google Play Store beziehen, gelten zus&auml;tzlich die Datenschutzbestimmungen von Google. Google kann Nutzungsdaten erheben (z.B. Downloads, Abst&uuml;rze). Der Anbieter hat hierauf keinen Einfluss.</p>
+
+            <h3>6. Rechte der Nutzer</h3>
+            <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, L&ouml;schung, Einschr&auml;nkung der Verarbeitung und Datenportabilit&auml;t. Kontakt: appstract7@gmail.com.</p>
+
+            <h3>7. Datensicherheit</h3>
+            <p>Die lokale Speicherung bietet ein hohes Mass an Datensicherheit, da keine &Uuml;bertragung &uuml;ber das Internet stattfindet (mit Ausnahme der optionalen Wetterabfrage).</p>
+
+            <h3>8. Aufbewahrungsdauer</h3>
+            <p>Lokal gespeicherte Daten verbleiben auf Ihrem Ger&auml;t, bis Sie diese l&ouml;schen oder die App deinstallieren. Kontakt- und Lizenzdaten werden gem&auml;ss den gesetzlichen Aufbewahrungsfristen gespeichert.</p>
+
+            <h3>9. &Auml;nderungen</h3>
+            <p>Der Anbieter beh&auml;lt sich vor, diese Datenschutzerkl&auml;rung bei Bedarf anzupassen. Die aktuelle Version ist stets unter setupkart.ch abrufbar.</p>
+
+            <h3>10. Anwendbares Recht</h3>
+            <p>Diese Datenschutzerkl&auml;rung unterliegt Schweizer Recht (DSG). Soweit die DSGVO der EU anwendbar ist, wird diese ebenfalls ber&uuml;cksichtigt.</p>
+
+            <h3>11. Kontakt</h3>
+            <p>Hermann Kopp &middot; E-Mail: appstract7@gmail.com &middot; Web: setupkart.ch</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- FOOTER -->
+<!-- ═══════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="app-icon.png" alt="SetupKart Pro" class="footer-icon">
+                <span>SetupKart Pro</span>
+            </div>
+            <p>&copy; 2026 Hermann Kopp &middot; SetupKart. Alle Rechte vorbehalten.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
