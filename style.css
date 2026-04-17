@@ -578,44 +578,39 @@ body {
 
 .store-download h3 {
     font-size: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     color: var(--text-muted);
 }
 
-.store-buttons {
+.qr-row {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 80px;
-    flex-wrap: nowrap;
+    gap: 60px;
 }
 
-.store-item {
+.qr-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px;
 }
 
-.qr-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    background: #fff;
-    border-radius: 12px;
-    padding: 12px;
-}
-
-.qr-wrapper img {
+.qr-box img {
     display: block;
+    width: 160px;
+    height: 160px;
 }
 
-.qr-label {
-    font-size: 13px;
-    color: #333;
+.qr-box p {
     margin: 0;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 700;
+    color: #111;
 }
 
 /* --- How it Works --- */
@@ -943,9 +938,8 @@ body {
         max-width: 340px;
     }
 
-    .store-buttons {
-        flex-wrap: wrap;
-        gap: 32px;
+    .qr-row {
+        gap: 24px;
     }
 
     .steps {
