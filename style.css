@@ -302,6 +302,44 @@ body {
     border-radius: 28px;
 }
 
+/* --- Hero Slideshow (phone frame stays fixed, screens crossfade/pan) --- */
+.hero-slideshow {
+    position: relative;
+    aspect-ratio: 1280 / 2482;
+}
+
+.hero-slideshow img.hero-slide {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    opacity: 0;
+    animation: heroSlideCycle 16s infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes heroSlideCycle {
+    0%   { opacity: 0; transform: scale(1.05) translateY(0%); }
+    2%   { opacity: 1; }
+    22%  { opacity: 1; transform: scale(1.05) translateY(-6%); }
+    27%  { opacity: 0; transform: scale(1.05) translateY(-6%); }
+    100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-slideshow img.hero-slide {
+        animation: none;
+        opacity: 0;
+        transform: none;
+    }
+    .hero-slideshow img.hero-slide:first-child {
+        opacity: 1;
+    }
+}
+
 /* --- Sections --- */
 .section-title {
     text-align: center;
